@@ -4,7 +4,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://huggingface.co/spaces/fishaudio/fish-speech-1/ app",
+          "git clone --recurse-submodules https://github.com/THUDM/GLM-4-Voice app",
         ]
       }
     },
@@ -24,9 +24,9 @@ module.exports = {
         venv: "env",
         path: "app",
         message: [
-          "pip install -r requirements.txt"
-		  //"pip3 install -e .",
-		  //"pip install https://github.com/AnyaCoder/fish-speech/releases/download/v0.1.0/triton_windows-0.1.0-py3-none-any.whl"
+          "pip install -r requirements.txt",
+		  "git lfs install",
+		  "git clone https://huggingface.co/THUDM/glm-4-voice-decoder"
         ]
       }
     },

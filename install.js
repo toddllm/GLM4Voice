@@ -4,7 +4,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone --recurse-submodules https://github.com/THUDM/GLM-4-Voice app",
+          "git clone --recurse-submodules git@github.com:toddllm/GLM-4-Voice.git app",
         ]
       }
     },
